@@ -1,0 +1,671 @@
+/* You can add global styles to this file, and also import other style files */
+
+$light-beige: #fff0db;
+$darker-beige: #ffdaa6;
+$gray: #808080;
+$dark-gray: #A9A9A9;
+$light-gray: #d3d3d3;
+$red-gray: #CF4B39;
+
+$pastel-red: #FAA0A0;
+$pastel-blue: #AEC6CF;
+$pastel-purple: #C3B1E1;
+$pastel-dark-red: #c23b22;
+$pastel-dark-blue: #6a8db5;
+$pastel-dark-purple: #966fd6;
+$pastel-light-purple: #CBC3E3;
+
+$pastel-light-green: #e8f4ea;
+$pastel-green: 	#c8e1cc;
+
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+html{
+    font-family: "League Spartan";
+    scroll-behavior: smooth;
+
+    a, a:visited{
+        color: black;
+        text-decoration: none;
+    }
+    a:hover{
+        color: white;
+        font-weight: bolder;
+    }
+
+}
+body{
+    margin: 0px;
+}
+
+.navi-bar{ 
+    position: fixed;
+    display:flex;
+
+    flex-direction: row;
+    width: 100vw;
+    margin-right:3vw;
+    background: $pastel-purple;
+    max-height: 10vh;
+    padding-top: .5vh;
+
+
+    #navi-section{
+        width: 50vw;
+    }
+
+    #navi-section li{
+
+        font-weight: bolder;
+        text-align: left;
+        list-style-type: none;    
+        display: inline;
+        margin-right: 3vw;
+        font-size: 1.5vw;
+        text-decoration: none; 
+        &:hover{
+            color: white;
+        }
+    
+
+    }
+    #contact-section{
+        width: 50vw;
+        text-align: right;
+        #git-img{
+            text-align: right;
+            height: 4vh;
+            width: 4vh;
+            padding: 1.5vh;
+            margin-right: 2vw;
+            &:hover{
+                filter: invert(1);
+            }
+
+        }
+        #linkedin-img{
+            text-align: right;
+            height: 4vh;
+            width: 4vh;
+            padding: 1.5vh;
+            margin-right: 2vw;
+            &:hover{
+                filter: invert(1);
+            }
+
+        }
+        #mail-img{
+            text-align: right;
+            height: 4vh;
+            width: 4vh;
+            padding: 1.5vh;
+            margin-right: 3vw;
+            &:hover{
+                filter: invert(1);
+            }
+
+        }
+
+    }
+    #contact-section li{
+        float: right;
+        text-align: right;
+        list-style-type: none;    
+        display: inline;
+        margin-right: 3vw;
+        font-size: 1.5vw;
+        text-decoration: solid; 
+        
+
+    }
+}
+
+
+#home-section{
+    
+    display: flex;
+    text-align: right;
+    height: 100vh;
+    background: $pastel-red;
+
+
+
+    #intro-cs{
+        width: 50vw; 
+
+        #name{
+            padding-top: 45vh;
+            padding-right: 1vw;
+            font-size: 2vw;
+            font-weight: normal;
+            margin: 0;
+
+
+        }
+        #subname{
+            padding-right: 1vw;
+            font-size: 4vw;
+            font-weight: normal;
+            margin: 0;
+            
+        }
+        #reslink{
+        }
+
+    }
+    #intro-math{
+        background: $pastel-blue;
+        width: 50vw;
+        text-align: left;
+        padding-top: 55vh;
+        #subname-math{
+            padding-left: 1vw;
+            font-size: 3vw;
+            font-weight: normal;
+            margin: 0;
+            color: black;         
+            
+        }
+    }
+}
+#skills-section{
+    display: flex;
+    text-align: right;
+    height: 100vh;
+    #cs-skills{
+        width: 50vw;
+        background: $pastel-red;
+        color: $pastel-dark-red;
+
+        
+        #cs-skills-head{
+            padding-bottom: 1vh;
+            float: center;
+            border-radius: 2vw;
+            margin-top: 10vh;
+            margin-left: 12.5vw;
+            width: 50%;
+            height: 10vh;
+            border: solid .25vw $pastel-dark-red;
+            background: $pastel-red;
+            color: $pastel-dark-red;
+            font-weight: bold;
+            box-shadow: 0px 0px 7px $pastel-dark-red;
+
+            font-size: 2vw;
+            text-align: center;
+            &:hover{
+                box-shadow: 0px 0px 10px $pastel-dark-red;
+                transition-duration: 500ms;
+                transition-property: box-shadow;
+            }
+            #cs-skills-head-text{
+                float: center;
+            }
+            margin-bottom: 0;
+        }
+        #cs-skills-container{
+
+            margin-top: 5vh;
+            display:flex;
+            flex-direction: row;
+            font-size: 2vw;
+            height: 40vh;
+            text-align: left;
+
+            #cs-lang{
+                margin-left: 8%;
+                width: 40%;
+                border-radius: 10%;
+                border: solid .25vw $pastel-dark-red;
+                box-shadow: 0px 0px 7px $pastel-dark-red;
+                #cs-lang-text{
+                    text-align: center;
+                }
+                &:hover{
+                    box-shadow: 0px 0px 10px $pastel-dark-red;
+                    transition-duration: 500ms;
+                    transition-property: box-shadow;
+                }
+                
+            }
+            #cs-lang li{
+                list-style: none;
+                &:hover{
+                    color: white;
+                    font-weight: bold;
+                }   
+            }
+            #cs-tech{
+                width:40%;
+                background: $pastel-red;
+                color: $pastel-dark-red;
+                border: .25vw $pastel-dark-red solid;
+                margin-left: 4%;
+                border-radius: 10%;
+                box-shadow: 0px 0px 7px $pastel-dark-red;
+                #cs-tech-text{
+                    text-align: center;
+                }
+                &:hover{
+                    box-shadow: 0px 0px 10px $pastel-dark-red;
+                    transition-duration: 500ms;
+                    transition-property: box-shadow;
+                }
+            }
+            #cs-tech li{
+                list-style: none;
+                &:hover{
+                    color: white;
+                    font-weight: bold;
+                }   
+
+            }
+        }
+        #cs-coursework{
+            border-radius: 2vw;
+            margin-left: 10%;
+            width: 80%;
+            margin-top: 10vh;
+            height: 20vh;
+            background: $pastel-red;
+            color: $pastel-dark-red;
+            border: .25vw solid $pastel-dark-red;
+            box-shadow: 0px 0px 7px $pastel-dark-red;   
+            &:hover{
+                box-shadow: 0px 0px 10px $pastel-dark-red;
+                transition-duration: 500ms;
+                transition-property: box-shadow;
+            }         
+            #cs-coursework-text{
+                padding-top: 1.25vh;
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.3vw;
+            }
+            #cs-coursework-list-container{
+                display:flex;
+                flex-direction: row;
+                text-align: left;  
+                margin-left: 1.1vw;
+                font-size: 1.4vw;
+                
+                #list1{
+                    margin-top: 0;
+                    padding-bottom:5vh;
+                }
+                #list2{
+                    margin-top: 0;
+                    padding-bottom: 5vh;
+                }
+            
+            }
+
+        }
+        #cs-coursework li{
+            list-style: none;
+            &:hover{
+                color: white;
+                font-weight: bold;
+            }   
+        }
+    }
+    #math-skills{
+        width: 50vw;
+        background: $pastel-blue;
+        #math-skills-head{
+            padding-bottom: 1vh;
+            border-radius: 2vw;
+            margin-top: 10vh;
+            margin-left: 12.5vw;
+            width: 50%;
+            height: 10vh;
+            background: $pastel-blue;
+            color: $pastel-dark-blue;
+            border: .25vw solid $pastel-dark-blue;
+            text-align: center;
+            box-shadow: 0px 0px 7px $pastel-dark-blue;
+            &:hover{
+                box-shadow: 0px 0px 10px $pastel-dark-blue;
+                transition-duration: 500ms;
+                transition-property: box-shadow;
+            }
+            #math-skills-head-text{
+                font-size: 2vw;
+                float: center;
+                font-weight: bold;
+            }
+
+
+        }
+        #math-coursework{
+            
+            margin-left: 10%;
+            width: 80%;
+            margin-top: 5vh;
+            display:flex;
+            flex-direction: column;
+            font-size: 2vw;
+            height: 50vh;
+            background: $pastel-blue;
+            color: $pastel-dark-blue;
+            border: .25vw solid $pastel-dark-blue;
+            text-align: left;
+            border-radius: 2vw;
+            box-shadow: 0px 0px 7px $pastel-dark-blue;
+            #math-coursework-text{
+                text-align: center;
+                font-size: 2vw;
+                font-weight: bold;
+                margin-bottom: 0;
+                
+            }
+            &:hover{
+                box-shadow: 0px 0px 10px $pastel-dark-blue;
+                transition-duration: 500ms;
+                transition-property: box-shadow;
+            }
+        }
+        #math-coursework li{
+            text-align: left;
+            padding-left: 8vw;
+            list-style: none;
+            &:hover{
+                color: white;
+                font-weight: bold;
+            }   
+        }
+        #actuarial-section{
+            border-radius: 2vw;
+            margin-top: 5vh;
+            margin-left: 10%;
+            height: 15vh;
+            width: 80%;
+            background: $pastel-blue;
+            color: $pastel-dark-blue;
+            border: .25vw solid $pastel-dark-blue;
+            box-shadow: 0px 0px 7px $pastel-dark-blue;
+            &:hover{
+                box-shadow: 0px 0px 10px $pastel-dark-blue;
+                transition-duration: 500ms;
+                transition-property: box-shadow;
+            }
+            
+            #actuarial-header{
+                padding-top: 1vh;
+                text-align: center;
+                font-size: 1.25vw;
+            }
+            text-align: center;
+            font-size: 1.5vw;
+            #test-name{
+                &:hover{
+                    color: white;
+                    font-weight: bold;
+                }   
+            }
+
+        }
+    }
+}
+#trans{
+    height: 30vh;
+    width: 100%;
+    background-image: linear-gradient(0, $pastel-purple, $pastel-blue );
+    #trans-left{
+
+        height: 30vh;
+        width: 49.4vw;
+        background-image: linear-gradient(0, $pastel-purple, $pastel-red );
+    }
+}
+#project-section{
+
+    display: flex;
+    height: 130vh;
+    text-align: right;
+    width: 100%;
+    background-color: $pastel-purple;
+    
+    #proj-container{
+        
+        
+        height: 90vh;
+        padding: 5vh;
+        align-items: center;
+        width: 100%;
+    
+        #proj-head{
+            border: solid white;
+            height: 10vh;
+            width: 30vw;
+            color: $pastel-dark-purple;
+            background: $pastel-purple;
+            box-shadow: 0px 0px 7px $pastel-dark-purple;
+            border: .25vw solid $pastel-dark-purple;
+
+            border-radius: 2vw;
+  
+            margin-left: 32.5vw;
+            margin-bottom: 5vh;
+            
+            font-size: 1vw;
+            &:hover{
+                box-shadow: 0px 0px 10px $pastel-dark-purple;
+                transition-duration: 500ms;
+                transition-property: box-shadow;
+            }  
+            #proj-title{
+                padding: .75vh;
+                text-align: center;
+            } 
+
+        }
+
+        #proj1-section{
+            box-shadow: 0px 0px 7px $pastel-dark-purple;
+            display: flex;
+            height: 30vh;
+            background: $pastel-blue;
+            padding: 1vw;
+
+            #project1-name{
+                margin-left: 4vw;              
+                width: 25%;
+                background: white;
+                box-shadow: 0px 0px 7px $pastel-dark-purple;
+                &:hover{
+
+                    background: black;
+                    transition-property: background;
+                    transition-duration: 250ms;
+                    
+                }
+            }
+            #proj1-img{
+                text-align: left;
+                margin-left: 8vw;             
+                width: 50%;   
+                background: $pastel-purple;
+                box-shadow: 0px 0px 7px $pastel-dark-purple;
+                padding: 5vh;
+                font-size: 1.25vw;            
+                &:hover{
+                    background: $pastel-red;
+                    transition-duration: 500ms;
+                    transition-property: box-shadow, border-radius, background;
+                    border-radius: 2vw;
+                }
+            }
+            #proj1-img li{
+                border-radius: 20%;
+                display: inline;
+                padding: .75vw;
+                background: $pastel-blue;
+                &:hover{
+                    background: $pastel-dark-blue;
+                    color: yellow;
+                    font-weight: bold;
+                }
+            }
+            
+            
+        }
+        #proj2-section{
+            box-shadow: 0px 0px 7px $pastel-dark-purple;
+            display: flex;
+            height: 30vh;
+            background: $pastel-red;
+            padding: 1vw;
+            #project2-name{  
+                margin-left: 4vw;              
+                width: 25%;
+                background: white;
+                &:hover{
+                    background: black;
+                    transition-property: background;
+                    transition-duration: 250ms;
+                }
+            }
+            #proj2-img{
+                text-align: left;
+                margin-left: 8vw;             
+                width: 50%;   
+                background: $pastel-purple;
+                box-shadow: 0px 0px 7px $pastel-dark-purple;
+                padding: 5vh;
+                font-size: 1.25vw;
+                &:hover{
+                    background: $pastel-blue;
+                    transition-duration: 500ms;
+                    transition-property: box-shadow, border-radius, background;
+                    border-radius: 2vw;
+                }
+            }
+            #proj2-img li{
+                border-radius: 20%;
+                display: inline;
+                padding: .75vw;
+                background: $pastel-red;
+                &:hover{
+                    background: $pastel-dark-red;
+                    color: lightgreen;
+                    font-weight: bold;
+                }
+            }
+        }
+        
+        #proj3-section{
+            box-shadow: 0px 0px 7px $pastel-dark-purple;
+            display: flex;
+            height: 30vh;
+            background: $pastel-blue;
+            padding: 1vw;
+            #project3-name{  
+                box-shadow: 0px 0px 7px $pastel-dark-purple;
+                margin-left: 4vw;              
+                width: 25%;
+                background: url("../src/assets/website-home.png");
+                &:hover{
+                    background: url("../src/assets/website-code.png");
+                    transition-property: background;
+                    transition-duration: 250ms;
+                }
+            }
+            #proj3-img{
+                text-align: left;
+                margin-left: 8vw;             
+                width: 50%;   
+                background: $pastel-purple;
+                box-shadow: 0px 0px 7px $pastel-dark-purple;
+                padding: 5vh;
+                font-size: 1.25vw;
+                &:hover{  
+                    background: $pastel-red;
+                    transition-duration: 500ms;
+                    transition-property: box-shadow, border-radius, background, width;
+                    border-radius: 2vw;
+
+                }
+
+            }
+            #proj3-img li{
+                margin-left: 1vw;
+                border-radius: 20%;
+                display: inline;
+                padding: .75vw;
+                background: $pastel-blue;
+                &:hover{
+                    background: $pastel-dark-blue;
+                    color: yellow;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+#about-section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: $pastel-purple;
+    width: 100%;
+    #abt-bd{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5vw;
+        align-items: top;
+        #abt-img{
+            margin-top: 15vh;
+            margin-left: 42.5vw;
+            border-radius: 100%;
+            box-shadow: 0px 0px 14px $pastel-dark-purple;           
+            height: 30vh;
+            width: 15vw;
+            object-fit: contain;  
+            &:hover{
+                box-shadow: 0px 0px 22px $pastel-dark-purple;
+                transition-duration: 500ms;
+                transition-property: box-shadow;
+            }
+            
+        }  
+
+        #abt-txt{
+            margin-top: 5vh;
+            margin-left: 25vw;
+            font-size: 1.2vw;
+            box-shadow: 0px 0px 14px $pastel-dark-purple;
+            height: 40vh;
+            width: 50vw;
+            background: $pastel-light-purple;
+            #abt-txt-head{
+                margin: 5vh;
+                font-size:1.6vw;
+                font-weight: bold;
+            }
+            #abt-txt-bod{
+                margin: 5vh;
+                font-size: 1.4vw;
+            }
+            &:hover{
+                box-shadow: 0px 0px 20px $pastel-dark-purple;
+                transition-duration: 500ms;
+                transition-property: box-shadow;
+            }
+
+        }  
+    
+    }
+
+
+}
+
