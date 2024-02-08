@@ -1,8 +1,22 @@
-#html {
+html {
     font-family: "League Spartan";
 }
+html a, html a:visited {
+    color: white;
+    text-decoration: none;
+}
+html a:hover {
+    color: white;
+    font-weight: bolder;
+}
+body{
+    margin-top: 0vw;
+    margin-left: 0vw;
+}
 #last {
-    width: 100vw;
+    margin-top: 0vw;
+    margin-left: 0vw;
+    width: 100%;
     height: 100%;
     justify-content: center;
     background-color: #c3b1e1;
