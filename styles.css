@@ -1,0 +1,621 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap");
+html {
+  font-family: "League Spartan";
+  scroll-behavior: smooth;
+}
+html a, html a:visited {
+  color: black;
+  text-decoration: none;
+}
+html a:hover {
+  color: white;
+  font-weight: bolder;
+}
+
+body {
+  margin: 0px;
+}
+
+.navi-bar {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  margin-right: 3vw;
+  background: #C3B1E1;
+  max-height: 10vh;
+  padding-top: 0.5vh;
+}
+.navi-bar #navi-section {
+  width: 50vw;
+}
+.navi-bar #navi-section li {
+  font-weight: bolder;
+  text-align: left;
+  list-style-type: none;
+  display: inline;
+  margin-right: 3vw;
+  font-size: 1.5vw;
+  text-decoration: none;
+}
+.navi-bar #navi-section li:hover {
+  color: white;
+}
+.navi-bar #contact-section {
+  width: 50vw;
+  text-align: right;
+}
+.navi-bar #contact-section #git-img {
+  text-align: right;
+  height: 4vh;
+  width: 4vh;
+  padding: 1.5vh;
+  margin-right: 2vw;
+}
+.navi-bar #contact-section #git-img:hover {
+  filter: invert(1);
+}
+.navi-bar #contact-section #linkedin-img {
+  text-align: right;
+  height: 4vh;
+  width: 4vh;
+  padding: 1.5vh;
+  margin-right: 2vw;
+}
+.navi-bar #contact-section #linkedin-img:hover {
+  filter: invert(1);
+}
+.navi-bar #contact-section #mail-img {
+  text-align: right;
+  height: 4vh;
+  width: 4vh;
+  padding: 1.5vh;
+  margin-right: 3vw;
+}
+.navi-bar #contact-section #mail-img:hover {
+  filter: invert(1);
+}
+.navi-bar #contact-section li {
+  float: right;
+  text-align: right;
+  list-style-type: none;
+  display: inline;
+  margin-right: 3vw;
+  font-size: 1.5vw;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+#home-section {
+  display: flex;
+  text-align: right;
+  height: 100vh;
+  background: #FAA0A0;
+}
+#home-section #intro-cs {
+  width: 50vw;
+}
+#home-section #intro-cs #name {
+  padding-top: 45vh;
+  padding-right: 1vw;
+  font-size: 2vw;
+  font-weight: normal;
+  margin: 0;
+}
+#home-section #intro-cs #subname {
+  padding-right: 1vw;
+  font-size: 4vw;
+  font-weight: normal;
+  margin: 0;
+}
+#home-section #intro-math {
+  background: #AEC6CF;
+  width: 50vw;
+  text-align: left;
+  padding-top: 55vh;
+}
+#home-section #intro-math #subname-math {
+  padding-left: 1vw;
+  font-size: 3vw;
+  font-weight: normal;
+  margin: 0;
+  color: black;
+}
+
+#skills-section {
+  display: flex;
+  text-align: right;
+  height: 100vh;
+}
+#skills-section #cs-skills {
+  width: 50vw;
+  background: #FAA0A0;
+  color: #c23b22;
+}
+#skills-section #cs-skills #cs-skills-head {
+  padding-bottom: 1vh;
+  float: center;
+  border-radius: 2vw;
+  margin-top: 10vh;
+  margin-left: 12.5vw;
+  width: 50%;
+  height: 10vh;
+  border: solid 0.25vw #c23b22;
+  background: #FAA0A0;
+  color: #c23b22;
+  font-weight: bold;
+  box-shadow: 0px 0px 7px #c23b22;
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 0;
+}
+#skills-section #cs-skills #cs-skills-head:hover {
+  box-shadow: 0px 0px 10px #c23b22;
+  transition-duration: 500ms;
+  transition-property: box-shadow;
+}
+#skills-section #cs-skills #cs-skills-head #cs-skills-head-text {
+  float: center;
+}
+#skills-section #cs-skills #cs-skills-container {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: row;
+  font-size: 2vw;
+  height: 40vh;
+  text-align: left;
+}
+#skills-section #cs-skills #cs-skills-container #cs-lang {
+  margin-left: 8%;
+  width: 40%;
+  border-radius: 10%;
+  border: solid 0.25vw #c23b22;
+  box-shadow: 0px 0px 7px #c23b22;
+}
+#skills-section #cs-skills #cs-skills-container #cs-lang #cs-lang-text {
+  text-align: center;
+}
+#skills-section #cs-skills #cs-skills-container #cs-lang:hover {
+  box-shadow: 0px 0px 10px #c23b22;
+  transition-duration: 500ms;
+  transition-property: box-shadow;
+}
+#skills-section #cs-skills #cs-skills-container #cs-lang li {
+  list-style: none;
+}
+#skills-section #cs-skills #cs-skills-container #cs-lang li:hover {
+  color: white;
+  font-weight: bold;
+}
+#skills-section #cs-skills #cs-skills-container #cs-tech {
+  width: 40%;
+  background: #FAA0A0;
+  color: #c23b22;
+  border: 0.25vw #c23b22 solid;
+  margin-left: 4%;
+  border-radius: 10%;
+  box-shadow: 0px 0px 7px #c23b22;
+}
+#skills-section #cs-skills #cs-skills-container #cs-tech #cs-tech-text {
+  text-align: center;
+}
+#skills-section #cs-skills #cs-skills-container #cs-tech:hover {
+  box-shadow: 0px 0px 10px #c23b22;
+  transition-duration: 500ms;
+  transition-property: box-shadow;
+}
+#skills-section #cs-skills #cs-skills-container #cs-tech li {
+  list-style: none;
+}
+#skills-section #cs-skills #cs-skills-container #cs-tech li:hover {
+  color: white;
+  font-weight: bold;
+}
+#skills-section #cs-skills #cs-coursework {
+  border-radius: 2vw;
+  margin-left: 10%;
+  width: 80%;
+  margin-top: 10vh;
+  height: 20vh;
+  background: #FAA0A0;
+  color: #c23b22;
+  border: 0.25vw solid #c23b22;
+  box-shadow: 0px 0px 7px #c23b22;
+}
+#skills-section #cs-skills #cs-coursework:hover {
+  box-shadow: 0px 0px 10px #c23b22;
+  transition-duration: 500ms;
+  transition-property: box-shadow;
+}
+#skills-section #cs-skills #cs-coursework #cs-coursework-text {
+  padding-top: 1.25vh;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3vw;
+}
+#skills-section #cs-skills #cs-coursework #cs-coursework-list-container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin-left: 1.1vw;
+  font-size: 1.4vw;
+}
+#skills-section #cs-skills #cs-coursework #cs-coursework-list-container #list1 {
+  margin-top: 0;
+  padding-bottom: 5vh;
+}
+#skills-section #cs-skills #cs-coursework #cs-coursework-list-container #list2 {
+  margin-top: 0;
+  padding-bottom: 5vh;
+}
+#skills-section #cs-skills #cs-coursework li {
+  list-style: none;
+}
+#skills-section #cs-skills #cs-coursework li:hover {
+  color: white;
+  font-weight: bold;
+}
+#skills-section #math-skills {
+  width: 50vw;
+  background: #AEC6CF;
+}
+#skills-section #math-skills #math-skills-head {
+  padding-bottom: 1vh;
+  border-radius: 2vw;
+  margin-top: 10vh;
+  margin-left: 12.5vw;
+  width: 50%;
+  height: 10vh;
+  background: #AEC6CF;
+  color: #6a8db5;
+  border: 0.25vw solid #6a8db5;
+  text-align: center;
+  box-shadow: 0px 0px 7px #6a8db5;
+}
+#skills-section #math-skills #math-skills-head:hover {
+  box-shadow: 0px 0px 10px #6a8db5;
+  transition-duration: 500ms;
+  transition-property: box-shadow;
+}
+#skills-section #math-skills #math-skills-head #math-skills-head-text {
+  font-size: 2vw;
+  float: center;
+  font-weight: bold;
+}
+#skills-section #math-skills #math-coursework {
+  margin-left: 10%;
+  width: 80%;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 2vw;
+  height: 50vh;
+  background: #AEC6CF;
+  color: #6a8db5;
+  border: 0.25vw solid #6a8db5;
+  text-align: left;
+  border-radius: 2vw;
+  box-shadow: 0px 0px 7px #6a8db5;
+}
+#skills-section #math-skills #math-coursework #math-coursework-text {
+  text-align: center;
+  font-size: 2vw;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+#skills-section #math-skills #math-coursework:hover {
+  box-shadow: 0px 0px 10px #6a8db5;
+  transition-duration: 500ms;
+  transition-property: box-shadow;
+}
+#skills-section #math-skills #math-coursework li {
+  text-align: left;
+  padding-left: 8vw;
+  list-style: none;
+}
+#skills-section #math-skills #math-coursework li:hover {
+  color: white;
+  font-weight: bold;
+}
+#skills-section #math-skills #actuarial-section {
+  border-radius: 2vw;
+  margin-top: 5vh;
+  margin-left: 10%;
+  height: 15vh;
+  width: 80%;
+  background: #AEC6CF;
+  color: #6a8db5;
+  border: 0.25vw solid #6a8db5;
+  box-shadow: 0px 0px 7px #6a8db5;
+  text-align: center;
+  font-size: 1.5vw;
+}
+#skills-section #math-skills #actuarial-section:hover {
+  box-shadow: 0px 0px 10px #6a8db5;
+  transition-duration: 500ms;
+  transition-property: box-shadow;
+}
+#skills-section #math-skills #actuarial-section #actuarial-header {
+  padding-top: 1vh;
+  text-align: center;
+  font-size: 1.25vw;
+}
+#skills-section #math-skills #actuarial-section #test-name:hover {
+  color: white;
+  font-weight: bold;
+}
+
+#trans {
+  height: 30vh;
+  width: 100%;
+  background-image: linear-gradient(0, #C3B1E1, #AEC6CF);
+}
+#trans #trans-left {
+  height: 30vh;
+  width: 49.4vw;
+  background-image: linear-gradient(0, #C3B1E1, #FAA0A0);
+}
+
+#project-section {
+  display: flex;
+  height: 150vh;
+  text-align: right;
+  width: 100%;
+  background-color: #C3B1E1;
+}
+#project-section #proj-container {
+  height: 120vh;
+  padding: 5vh;
+  align-items: center;
+  width: 100%;
+}
+#project-section #proj-container #proj-head {
+  border: solid white;
+  height: 10vh;
+  width: 30vw;
+  color: #966fd6;
+  background: #C3B1E1;
+  box-shadow: 0px 0px 7px #966fd6;
+  border: 0.25vw solid #966fd6;
+  border-radius: 2vw;
+  margin-left: 32.5vw;
+  margin-bottom: 5vh;
+  font-size: 1vw;
+}
+#project-section #proj-container #proj-head:hover {
+  box-shadow: 0px 0px 10px #966fd6;
+  transition-duration: 500ms;
+  transition-property: box-shadow;
+}
+#project-section #proj-container #proj-head #proj-title {
+  padding: 0.75vh;
+  text-align: center;
+}
+#project-section #proj-container #proj1-section {
+  box-shadow: 0px 0px 7px #966fd6;
+  display: flex;
+  height: 30vh;
+  background: #AEC6CF;
+  padding: 1vw;
+}
+#project-section #proj-container #proj1-section #project1-name {
+  margin-left: 4vw;
+  width: 25%;
+  background: white;
+  box-shadow: 0px 0px 7px #966fd6;
+}
+#project-section #proj-container #proj1-section #project1-name:hover {
+  background: black;
+  transition-property: background;
+  transition-duration: 250ms;
+}
+#project-section #proj-container #proj1-section #proj1-img {
+  text-align: left;
+  margin-left: 8vw;
+  width: 50%;
+  background: #C3B1E1;
+  box-shadow: 0px 0px 7px #966fd6;
+  padding: 5vh;
+  font-size: 1.25vw;
+}
+#project-section #proj-container #proj1-section #proj1-img:hover {
+  background: #FAA0A0;
+  transition-duration: 500ms;
+  transition-property: box-shadow, border-radius, background;
+  border-radius: 2vw;
+}
+#project-section #proj-container #proj1-section #proj1-img li {
+  border-radius: 20%;
+  display: inline;
+  padding: 0.75vw;
+  background: #AEC6CF;
+}
+#project-section #proj-container #proj1-section #proj1-img li:hover {
+  background: #6a8db5;
+  color: yellow;
+  font-weight: bold;
+}
+#project-section #proj-container #proj2-section {
+  box-shadow: 0px 0px 7px #966fd6;
+  display: flex;
+  height: 30vh;
+  background: #FAA0A0;
+  padding: 1vw;
+}
+#project-section #proj-container #proj2-section #project2-name {
+  margin-left: 4vw;
+  width: 25%;
+  background: white;
+}
+#project-section #proj-container #proj2-section #project2-name:hover {
+  background: black;
+  transition-property: background;
+  transition-duration: 250ms;
+}
+#project-section #proj-container #proj2-section #proj2-img {
+  text-align: left;
+  margin-left: 8vw;
+  width: 50%;
+  background: #C3B1E1;
+  box-shadow: 0px 0px 7px #966fd6;
+  padding: 5vh;
+  font-size: 1.25vw;
+}
+#project-section #proj-container #proj2-section #proj2-img:hover {
+  background: #AEC6CF;
+  transition-duration: 500ms;
+  transition-property: box-shadow, border-radius, background;
+  border-radius: 2vw;
+}
+#project-section #proj-container #proj2-section #proj2-img li {
+  border-radius: 20%;
+  display: inline;
+  padding: 0.75vw;
+  background: #FAA0A0;
+}
+#project-section #proj-container #proj2-section #proj2-img li:hover {
+  background: #c23b22;
+  color: lightgreen;
+  font-weight: bold;
+}
+#project-section #proj-container #proj3-section {
+  box-shadow: 0px 0px 7px #966fd6;
+  display: flex;
+  height: 30vh;
+  background: #AEC6CF;
+  padding: 1vw;
+}
+#project-section #proj-container #proj3-section #project3-name {
+  box-shadow: 0px 0px 7px #966fd6;
+  margin-left: 4vw;
+  width: 25%;
+  background: url("assets/website-home.png");
+}
+#project-section #proj-container #proj3-section #project3-name:hover {
+  background: url("assets/website-code.png");
+  transition-property: background;
+  transition-duration: 250ms;
+}
+#project-section #proj-container #proj3-section #proj3-img {
+  text-align: left;
+  margin-left: 8vw;
+  width: 50%;
+  background: #C3B1E1;
+  box-shadow: 0px 0px 7px #966fd6;
+  padding: 5vh;
+  font-size: 1.25vw;
+}
+#project-section #proj-container #proj3-section #proj3-img:hover {
+  background: #FAA0A0;
+  transition-duration: 500ms;
+  transition-property: box-shadow, border-radius, background, width;
+  border-radius: 2vw;
+}
+#project-section #proj-container #proj3-section #proj3-img li {
+  margin-left: 1vw;
+  border-radius: 20%;
+  display: inline;
+  padding: 0.75vw;
+  background: #AEC6CF;
+}
+#project-section #proj-container #proj3-section #proj3-img li:hover {
+  background: #6a8db5;
+  color: yellow;
+  font-weight: bold;
+}
+#project-section #proj-container #proj4-section {
+  box-shadow: 0px 0px 7px #966fd6;
+  display: flex;
+  height: 30vh;
+  background: #FAA0A0;
+  padding: 1vw;
+}
+#project-section #proj-container #proj4-section #project4-name {
+  margin-left: 4vw;
+  width: 25%;
+  background: white;
+}
+#project-section #proj-container #proj4-section #project4-name:hover {
+  background: black;
+  transition-property: background;
+  transition-duration: 250ms;
+}
+#project-section #proj-container #proj4-section #proj4-img {
+  text-align: left;
+  margin-left: 8vw;
+  width: 50%;
+  background: #C3B1E1;
+  box-shadow: 0px 0px 7px #966fd6;
+  padding: 5vh;
+  font-size: 1.25vw;
+}
+#project-section #proj-container #proj4-section #proj4-img:hover {
+  background: #AEC6CF;
+  transition-duration: 500ms;
+  transition-property: box-shadow, border-radius, background;
+  border-radius: 2vw;
+}
+#project-section #proj-container #proj4-section #proj4-img li {
+  border-radius: 20%;
+  display: inline;
+  padding: 0.75vw;
+  background: #FAA0A0;
+}
+#project-section #proj-container #proj4-section #proj4-img li:hover {
+  background: #c23b22;
+  color: lightgreen;
+  font-weight: bold;
+}
+
+#about-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #C3B1E1;
+  width: 100%;
+}
+#about-section #abt-bd {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5vw;
+  align-items: top;
+}
+#about-section #abt-bd #abt-img {
+  margin-top: 15vh;
+  margin-left: 42.5vw;
+  border-radius: 100%;
+  box-shadow: 0px 0px 14px #966fd6;
+  height: 30vh;
+  width: 15vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#about-section #abt-bd #abt-img:hover {
+  box-shadow: 0px 0px 22px #966fd6;
+  transition-duration: 500ms;
+  transition-property: box-shadow;
+}
+#about-section #abt-bd #abt-txt {
+  margin-top: 5vh;
+  margin-left: 25vw;
+  font-size: 1.2vw;
+  box-shadow: 0px 0px 14px #966fd6;
+  height: 40vh;
+  width: 50vw;
+  background: #CBC3E3;
+}
+#about-section #abt-bd #abt-txt #abt-txt-head {
+  margin: 5vh;
+  font-size: 1.6vw;
+  font-weight: bold;
+}
+#about-section #abt-bd #abt-txt #abt-txt-bod {
+  margin: 5vh;
+  font-size: 1.4vw;
+}
+#about-section #abt-bd #abt-txt:hover {
+  box-shadow: 0px 0px 20px #966fd6;
+  transition-duration: 500ms;
+  transition-property: box-shadow;
+}
