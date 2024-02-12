@@ -359,13 +359,13 @@ body {
 
 #project-section {
   display: flex;
-  height: 130vh;
+  height: 150vh;
   text-align: right;
   width: 100%;
   background-color: #C3B1E1;
 }
 #project-section #proj-container {
-  height: 90vh;
+  height: 120vh;
   padding: 5vh;
   align-items: center;
   width: 100%;
@@ -522,6 +522,49 @@ body {
 #project-section #proj-container #proj3-section #proj3-img li:hover {
   background: #6a8db5;
   color: yellow;
+  font-weight: bold;
+}
+#project-section #proj-container #proj4-section {
+  box-shadow: 0px 0px 7px #966fd6;
+  display: flex;
+  height: 30vh;
+  background: #FAA0A0;
+  padding: 1vw;
+}
+#project-section #proj-container #proj4-section #project4-name {
+  margin-left: 4vw;
+  width: 25%;
+  background: white;
+}
+#project-section #proj-container #proj4-section #project4-name:hover {
+  background: black;
+  transition-property: background;
+  transition-duration: 250ms;
+}
+#project-section #proj-container #proj4-section #proj4-img {
+  text-align: left;
+  margin-left: 8vw;
+  width: 50%;
+  background: #C3B1E1;
+  box-shadow: 0px 0px 7px #966fd6;
+  padding: 5vh;
+  font-size: 1.25vw;
+}
+#project-section #proj-container #proj4-section #proj4-img:hover {
+  background: #AEC6CF;
+  transition-duration: 500ms;
+  transition-property: box-shadow, border-radius, background;
+  border-radius: 2vw;
+}
+#project-section #proj-container #proj4-section #proj4-img li {
+  border-radius: 20%;
+  display: inline;
+  padding: 0.75vw;
+  background: #FAA0A0;
+}
+#project-section #proj-container #proj4-section #proj4-img li:hover {
+  background: #c23b22;
+  color: lightgreen;
   font-weight: bold;
 }
 
