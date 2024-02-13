@@ -426,7 +426,7 @@ body {
   border-radius: 2vw;
 }
 #project-section #proj-container #proj1-section #proj1-img li {
-  border-radius: 20%;
+  border-radius: 2vw;
   display: inline;
   padding: 0.75vw;
   background: #AEC6CF;
@@ -469,7 +469,7 @@ body {
   border-radius: 2vw;
 }
 #project-section #proj-container #proj2-section #proj2-img li {
-  border-radius: 20%;
+  border-radius: 2vw;
   display: inline;
   padding: 0.75vw;
   background: #FAA0A0;
@@ -514,7 +514,7 @@ body {
 }
 #project-section #proj-container #proj3-section #proj3-img li {
   margin-left: 1vw;
-  border-radius: 20%;
+  border-radius: 2vw;
   display: inline;
   padding: 0.75vw;
   background: #AEC6CF;
@@ -557,7 +557,7 @@ body {
   border-radius: 2vw;
 }
 #project-section #proj-container #proj4-section #proj4-img li {
-  border-radius: 20%;
+  border-radius: 2vw;
   display: inline;
   padding: 0.75vw;
   background: #FAA0A0;
