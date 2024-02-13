@@ -359,13 +359,13 @@ body {
 
 #project-section {
   display: flex;
-  height: 150vh;
+  height: 170vh;
   text-align: right;
   width: 100%;
   background-color: #C3B1E1;
 }
 #project-section #proj-container {
-  height: 120vh;
+  height: 140vh;
   padding: 5vh;
   align-items: center;
   width: 100%;
